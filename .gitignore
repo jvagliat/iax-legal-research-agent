@@ -162,3 +162,8 @@ cython_debug/
 #.idea/
 .DS_Store
 uv.lock
+
+
+.langgraph_api/
+my_elastic_search_setup.txt
+.env.example

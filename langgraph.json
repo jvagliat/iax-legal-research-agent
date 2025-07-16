@@ -1,8 +1,8 @@
 {
   "dependencies": ["."],
   "graphs": {
-    "indexer": "./src/index_graph/graph.py:graph",
-    "retrieval_graph": "./src/retrieval_graph/graph.py:graph"
+    "indexer": "./src/iax_legal_lg_rag_research_agent/index_graph/graph.py:graph",
+    "retrieval_graph": "./src/iax_legal_lg_rag_research_agent/retrieval_graph/graph.py:graph"
   },
   "env": ".env"
 }

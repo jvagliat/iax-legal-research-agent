@@ -67,7 +67,7 @@ async def test_retrieval_graph() -> None:
         {"messages": [("user", "What is a node in LangGraph?")]},
         config,
     )
-    expect(res["router"]["type"]).to_contain("langchain")
+    expect(res["router"]["type"]).to_contain("legal")
     response = str(res["messages"][-1].content)
     expect(response.lower()).to_contain("function")
 

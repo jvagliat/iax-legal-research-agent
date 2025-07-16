@@ -1,5 +1,5 @@
 [project]
-name = "rag-research-graph"
+name = "iax_legal_lg_rag_research_agent"
 version = "0.0.1"
 description = "Starter template for making a custom RAG research agent graph in LangGraph."
 authors = [
@@ -7,7 +7,7 @@ authors = [
 ]
 license = { text = "MIT" }
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.11,<4.0"
 dependencies = [
     "langgraph>=0.2.6",
     "langchain-openai>=0.1.22",
@@ -15,11 +15,12 @@ dependencies = [
     "langchain>=0.2.14",
     "langchain-fireworks>=0.1.7",
     "python-dotenv>=1.0.1",
-    "langchain-elasticsearch>=0.2.2,<0.3.0",
-    "langchain-pinecone>=0.1.3,<0.2.0",
+    "langchain-elasticsearch>=0.3.2",
     "msgspec>=0.18.6",
     "langchain-mongodb>=0.1.9",
     "langchain-cohere>=0.2.4",
+    "langgraph-cli (>=0.3.4,<0.4.0)",
+    "langgraph-api (>=0.2.92,<0.3.0)",
 ]
 
 [project.optional-dependencies]
@@ -32,11 +33,11 @@ build-backend = "setuptools.build_meta"
 [tool.setuptools]
 packages = ["retrieval_graph", "index_graph", "shared"]
 [tool.setuptools.package-dir]
-"langgraph.templates.retrieval_graph" = "src/retrieval_graph"
-"langgraph.templates.index_graph" = "src/index_graph"
-"retrieval_graph" = "src/retrieval_graph"
-"index_graph" = "src/index_graph"
-"shared" = "src/shared"
+"langgraph.templates.retrieval_graph" = "src/iax_legal_lg_rag_research_agent/retrieval_graph"
+"langgraph.templates.index_graph" = "src/iax_legal_lg_rag_research_agent/index_graph"
+"retrieval_graph" = "src/iax_legal_lg_rag_research_agent/retrieval_graph"
+"index_graph" = "src/iax_legal_lg_rag_research_agent/index_graph"
+"shared" = "src/iax_legal_lg_rag_research_agent/shared"
 
 
 [tool.setuptools.package-data]
