@@ -17,6 +17,8 @@ from iax_legal_lg_rag_research_agent.retrieval_graph.researcher_graph.graph impo
 from iax_legal_lg_rag_research_agent.retrieval_graph.state import AgentState, InputState, Router
 from iax_legal_lg_rag_research_agent.shared.utils import format_docs, load_chat_model
 
+import langchain 
+langchain.debug = True
 
 async def analyze_and_route_query(
     state: AgentState, *, config: RunnableConfig

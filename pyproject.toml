@@ -21,6 +21,11 @@ dependencies = [
     "langchain-cohere>=0.2.4",
     "langgraph-cli (>=0.3.4,<0.4.0)",
     "langgraph-api (>=0.2.92,<0.3.0)",
+    "requests (>=2.32.4,<3.0.0)",
+    "beautifulsoup4 (>=4.13.4,<5.0.0)",
+    "flask (>=3.1.1,<4.0.0)",
+    "lxml (>=6.0.0,<7.0.0)",
+    "langgraph-sdk (>=0.1.74,<0.2.0)",
 ]
 
 [project.optional-dependencies]
